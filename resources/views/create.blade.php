@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="team2name" class="col-md-4 col-form-label ">Name</label>
+                                <label for="team2name" class="col-md-4 col-form-label ">Team 2 Name</label>
 
                                 <div class="col-md-12">
                                     <input id="team2name" type="text" class="form-control
@@ -110,6 +110,25 @@
                                            required autocomplete="draw_coef" autofocus>
 
                                     @error('draw_coef')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="video_link"  class="col-md-4 col-form-label ">
+                                    Video Link
+                                </label>
+
+                                <div class="col-md-12">
+                                    <input id="video_link" type="text" class="form-control
+                                        @error('video_link') is-invalid @enderror" name="video_link"
+                                           value="{{ old('video_link') }}"
+                                           required autocomplete="video_link" autofocus>
+
+                                    @error('video_link')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

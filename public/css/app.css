@@ -1599,7 +1599,7 @@ pre code {
     max-width: 91.6666666667%;
   }
 
-  .col-lg-12 {
+.col-lg-12 {
     -webkit-box-flex: 0;
             flex: 0 0 100%;
     max-width: 100%;
@@ -11356,3 +11356,18 @@ a.text-dark:focus {
   }
 }
 
+.big {
+    font-size: 10rem !important;
+}
+.score-btn {
+    padding: 40px!important;
+    height: 100%;
+}
+@media (max-width: 700px)  {
+    .big {
+        font-size: 5rem!important;
+    }
+    .score-btn {
+        padding: 30px!important;
+    }
+}

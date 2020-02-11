@@ -10,8 +10,9 @@
 
                     <div class="card-body">
                         <div class="row justify-content-between">
-                            <h4>{{$event->team1name}}</h4>
-                            <h4>{{$event->team2name}}</h4>
+                            <h4>{{$event->team1name}} (coef: {{ $event->team1wincoef }})</h4>
+                            <h4>Draw (coef: {{ $event->draw_coef }})</h4>
+                            <h4>{{$event->team2name}} (coef: {{ $event->team2wincoef }})</h4>
                         </div>
                         <div class="row justify-content-between">
                             <form action="{{ route('event.score', $event) }}" method="post">
